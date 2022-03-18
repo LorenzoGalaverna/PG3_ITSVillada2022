@@ -1,17 +1,14 @@
 numero = int(input("Escribe un numero para averiguar si es step: ")) 
-num = [int(i) for i in str(numero)]
-
 
 def numero_step(num):
-    for i in range(0, num(len(num))):
-        if num[i] != num[i + 1] :
-            return False
-    return True
-    
+    a = map(int, str(num)[1:]) 
+    b = map(int, str(num)[:-1])
+    return all(abs(a_digit - b_digit) == 1 for a_digit, b_digit in zip(a, b))
 
-resultado = numero_step(num)
+resultado = numero_step(numero)
 
 if (resultado):
         print("es un numero step")
 else:
         print("no es un numero step")
+
