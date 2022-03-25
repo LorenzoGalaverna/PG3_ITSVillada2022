@@ -1,5 +1,8 @@
 palabra = input("ingreses una palabra para calcular cuantas vocales tiene: ")
+
 def cant_vocales(string):
+    '''Toma una palabra y devuelve la cantidad de vocales que tiene'''
+    
     num_vocales = 0
     for char in string:
         if char in "aeiouAEIOU":
