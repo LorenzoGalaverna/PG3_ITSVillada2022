@@ -1,7 +1,7 @@
 palabra = input("Escribe una palabra para averiguar si su palabra es palindromo: ")
 
 
-def capicua_o_no(palabra_capicua_o_no):
+def capicua_o_no(palabra_capicua_o_no: str) -> bool:
     """Toma una palabra y devuelve si es capicua o no"""
 
     for i in range(0, int(len(palabra_capicua_o_no) / 2)):

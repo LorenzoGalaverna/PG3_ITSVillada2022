@@ -3,7 +3,7 @@ Ancho = int(input("ingrese el ancho del rectangulo que quiere formar: "))
 Caracter = input("ingrese el caracter que quiere usar para formar el rectangulo: ")
 
 
-def formar_rectangulo(altura, anchura, Caracter):
+def formar_rectangulo(altura: int, anchura: int, Caracter: str) -> str:
     """Toma una altura, un ancho y un caracter y forma un rectangulo con esos datos"""
 
     for y in range(altura):

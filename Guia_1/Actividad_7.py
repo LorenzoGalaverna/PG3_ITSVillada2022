@@ -1,7 +1,7 @@
 numero = int(input("Escribe un numero para averiguar si es step: "))
 
 
-def numero_step(num):
+def numero_step(num: int) -> int:
     """Toma una palabra y devuelve la cantidad de vocales que tiene"""
 
     a = map(int, str(num)[1:])

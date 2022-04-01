@@ -1,7 +1,7 @@
 palabra = input("ingreses una palabra para calcular cuantas vocales tiene: ")
 
 
-def cant_vocales(string):
+def cant_vocales(string: str) -> int:
     """Toma una palabra y devuelve la cantidad de vocales que tiene"""
 
     num_vocales = 0
