@@ -16,8 +16,17 @@ def formar_triangulo(anchura: int, caracter: str) -> str:
         print((" ") * espacios + (caracter + " ") * contador)
         contador += 1
 
+def formar_triangulo_invertido(anchura: int, caracter: str) -> str:
+    """Toma una altura, un ancho y un caracter y forma un triangulo con esos datos"""
 
-eleccion = int(input("ingrese que forma quiere formar: 1, cuadrado o 2, triangulo"))
+    contador: int = anchura
+    for i in range(anchura):
+        espacios: int = anchura - contador
+        print((" ") * espacios + (caracter + " ") * contador)
+        contador -= 1
+
+
+eleccion = int(input("ingrese que forma quiere formar: 1, cuadrado o 2, triangulo normal 0 3, triangulo invertido"))
 
 if eleccion == 1:
         Alto = int(input("ingrese el alto del rectangulo que quiere formar: "))
@@ -29,3 +38,8 @@ elif eleccion == 2:
         Caracter = input("ingrese el caracter que quiere usar para formar el triangulo: ")
 
         formar_triangulo(Ancho, Caracter)
+elif eleccion == 3:
+        Ancho = int(input("ingrese el ancho de la base del triangulo que quiere formar: "))
+        Caracter = input("ingrese el caracter que quiere usar para formar el triangulo: ")
+
+        formar_triangulo_invertido(Ancho, Caracter)
