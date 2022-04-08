@@ -1,8 +1,3 @@
-Alto = int(input("ingrese el alto del rectangulo que quiere formar: "))
-Ancho = int(input("ingrese el ancho del rectangulo que quiere formar: "))
-Caracter = input("ingrese el caracter que quiere usar para formar el rectangulo: ")
-
-
 def formar_rectangulo(altura: int, anchura: int, Caracter: str) -> str:
     """Toma una altura, un ancho y un caracter y forma un rectangulo con esos datos"""
 
@@ -12,4 +7,25 @@ def formar_rectangulo(altura: int, anchura: int, Caracter: str) -> str:
         print("")
 
 
-formar_rectangulo(Alto, Ancho, Caracter)
+def formar_triangulo(anchura: int, caracter: str) -> str:
+    """Toma una altura, un ancho y un caracter y forma un triangulo con esos datos"""
+
+    contador: int = 1
+    for i in range(anchura):
+        espacios: int = anchura - contador
+        print((" ") * espacios + (caracter + " ") * contador)
+        contador += 1
+
+
+eleccion = int(input("ingrese que forma quiere formar: 1, cuadrado o 2, triangulo"))
+
+if eleccion == 1:
+        Alto = int(input("ingrese el alto del rectangulo que quiere formar: "))
+        Ancho = int(input("ingrese el ancho del rectangulo que quiere formar: "))
+        Caracter = input("ingrese el caracter que quiere usar para formar el rectangulo: ")
+        formar_rectangulo(Alto, Ancho, Caracter)
+elif eleccion == 2:
+        Ancho = int(input("ingrese el ancho de la base del triangulo que quiere formar: "))
+        Caracter = input("ingrese el caracter que quiere usar para formar el triangulo: ")
+
+        formar_triangulo(Ancho, Caracter)
