@@ -12,9 +12,13 @@ class Alumno:
 
 
 alumno1 = Alumno()
-alumno1.inicializar("Jose", 7)
+nombre1 = input ("ingrese el nombre de la persona ")
+nota1 = int(input ("ingrese la nota de la persona "))
+alumno1.inicializar(nombre1, nota1)
 alumno1.imprimir()
 
 alumno2 = Alumno()
-alumno2.inicializar("Paula", 4)
+nombre2 = input ("ingrese el nombre de la persona ")
+nota2 = int(input ("ingrese la nota de la persona "))
+alumno2.inicializar(nombre2, nota2)
 alumno2.imprimir()
