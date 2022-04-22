@@ -8,9 +8,11 @@ class Persona:
 
 
 persona1 = Persona()
-persona1.inicializar("Jose")
+nombre1 = input ("ingrese el nombre de la persona")
+persona1.inicializar(nombre1)
 persona1.imprimir()
 
 persona2 = Persona()
-persona2.inicializar("Paula")
+nombre2 = input ("ingrese el nombre de la persona")
+persona2.inicializar(nombre2)
 persona2.imprimir()
