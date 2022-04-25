@@ -8,12 +8,11 @@ class Persona:
         print("edad de la persona: ", self.edad)
 
 
-
 class Empleado(Persona):
     def __init__(self):
         super().__init__()
         self.sueldo = int(input("ingrese el sueldo del empleado"))
-    
+
     def imprimir(self):
         super().imprimir()
         print("el sueldo del empleado es: ", self.sueldo)
@@ -23,9 +22,6 @@ class Empleado(Persona):
             print("el empleado debe pagar impuestos")
         else:
             print("el empleado no debe pagar impuestos")
-
-
-
 
 
 persona1 = Persona()

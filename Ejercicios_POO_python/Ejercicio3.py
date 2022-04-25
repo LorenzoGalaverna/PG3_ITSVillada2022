@@ -1,10 +1,10 @@
 class Triangulo:
-    def inicializar (self, lado1, lado2, lado3):
+    def inicializar(self, lado1, lado2, lado3):
         self.lado1 = lado1
         self.lado2 = lado2
         self.lado3 = lado3
 
-    def lado_mayor (self):
+    def lado_mayor(self):
         if self.lado1 > self.lado2 and self.lado1 > self.lado3:
             print("El lado mayor es el lado 1")
         elif self.lado2 > self.lado1 and self.lado2 > self.lado3:
@@ -14,7 +14,7 @@ class Triangulo:
         else:
             print("no hay un lado mayor")
 
-    def equilatero (self):
+    def equilatero(self):
         if self.lado1 == self.lado2 and self.lado1 == self.lado3:
             print("el triangulo es equilatero")
         else:

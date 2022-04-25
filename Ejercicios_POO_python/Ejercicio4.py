@@ -6,18 +6,18 @@ class Operaciones:
         self.resta()
         self.multiplicacion()
         self.division()
-    
 
-    def suma (self):
+    def suma(self):
         print("el resultado de la suma es: ", self.numero1 + self.numero2)
 
-    def resta (self):
+    def resta(self):
         print("el resultado de la resta es: ", self.numero1 - self.numero2)
 
-    def multiplicacion (self):
+    def multiplicacion(self):
         print("el resultado de la multiplicacon es: ", self.numero1 * self.numero2)
 
-    def division (self):
+    def division(self):
         print("el resultado de la diviion es: ", self.numero1 / self.numero2)
+
 
 operacion1 = Operaciones()
