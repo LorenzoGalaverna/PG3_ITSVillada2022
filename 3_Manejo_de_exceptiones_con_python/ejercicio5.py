@@ -1,7 +1,7 @@
 while True:
         try:
             escribir = input("ingrese lo que quiera guardar en el txt: ")
-            texto = open('demotext.txt', 'a')
+            texto = open('3_Manejo_de_exceptiones_con_python/texto.txt', 'a')
 
             if escribir.isnumeric():   
                 texto.write(int(escribir))
